@@ -19,7 +19,8 @@ namespace DataStructures
         }
 
         FenwickTree::FenwickTree(std::vector<int>& nums): nums(nums), arr(nums.size()+1,0){
-
+            for(int i=0;i<nums.size();i++)
+                updateTillRoot(i+1,nums[i]);
         }
         void Trees::FenwickTree::update(int index, int val) {
             updateTillRoot(index+1, val-nums[index]);
