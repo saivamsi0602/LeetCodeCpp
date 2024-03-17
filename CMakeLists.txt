@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 project(LeetCodeCPP)
 
-add_subdirectory(problems)
+add_subdirectory(problems DataStructuresAndAlgorithms)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
